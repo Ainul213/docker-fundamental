@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Halaman Web Modern</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .grid-item {
+            background-color: white;
+            margin: 15px;
+            padding: 20px;
+            width: calc(33.333% - 40px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .grid-item:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media(max-width: 768px) {
+            .grid-item {
+                width: calc(50% - 40px);
+            }
+        }
+
+        @media(max-width: 500px) {
+            .grid-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di Halaman Web Modern</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="grid">
+            <div class="grid-item">
+                <h2>About Us</h2>
+                <p>Kami adalah perusahaan yang fokus pada pengembangan teknologi digital untuk masa depan yang lebih baik.</p>
+            </div>
+            <div class="grid-item">
+                <h2>Our Services</h2>
+                <p>Kami menyediakan layanan konsultasi dan pengembangan software sesuai kebutuhan bisnis Anda.</p>
+            </div>
+            <div class="grid-item">
+                <h2>Contact Us</h2>
+                <p>Anda bisa menghubungi kami melalui email atau telepon untuk mendapatkan informasi lebih lanjut.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Perusahaan Teknologi | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        // Contoh interaktivitas sederhana
+        document.querySelector('nav ul li a').addEventListener('click', function() {
+            alert('Navigasi diklik!');
+        });
+    </script>
+</body>
+</html>
